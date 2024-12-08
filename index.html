@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP2 Le-Ha Anna</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ========================================= ACCUEIL ========================================= -->
+    <section id="debut">
+      <header>
+        <h3>TP2 - Automne 2024</h3>
+        <h1 id="titre">Studio Ghibli</h1>
+        <h2>Par Anna Le-Ha</h2>
+        <h3>Techniques d’intégration multimédia</h3>
+        <h3>Collège Maisonneuve</h3>
+
+        <!-- === MENU === -->
+        <nav>
+          <a href="#debut" style="color: rgb(255, 255, 255)">Accueil</a>
+          <a href="#article" style="color: rgb(255, 255, 255)">Films</a>
+          <a href="#galerie" style="color: rgb(255, 255, 255)">Createurs</a>
+          <a href="#video" style="color: rgb(255, 255, 255)">Instrumental</a>
+          <a href="#liens" style="color: rgb(255, 255, 255)">Liens</a>
+        </nav>
+
+        <!-- adresse GitHub -->
+        https://hwasuri.github.io/Le-Ha-Anna-TP2/
+      </header>
+      <!-- ========================================= INSCRIPTION ========================================= -->
+      <div id="couleur">
+        <section id="inscription">
+          <form action="traiter_form.php">
+            <fieldset>
+              <caption>
+                Sondage
+              </caption>
+              <!-- QUESTION 1 -->
+              <p>En quelle année avez-vous découvert Studio Ghibli?</p>
+              <select name="annee">
+                <option value="2000s">2000s</option>
+                <option value="2010s">2010s</option>
+                <option value="2020s">2020s</option>
+              </select>
+
+              <!-- QUESTION 2 -->
+              <p>Quels films du Studio Ghibli avez-vous visionné?</p>
+
+              <input
+                type="checkbox"
+                id="spirited-away"
+                name="movies"
+                value="spirited"
+              />
+              <label for="spirited-away">Le Voyage de Chihiro</label><br />
+
+              <input
+                type="checkbox"
+                id="howls-moving-castle"
+                name="movies"
+                value="castle"
+              />
+              <label for="howls-moving-castle">Le Château ambulant</label><br />
+
+              <input type="checkbox" id="ponyo" name="movies" value="Ponyo" />
+              <label for="ponyo">Ponyo sur la falaise</label><br />
+
+              <input type="checkbox" id="kiki" name="movies" value="kiki" />
+              <label for="kiki"> Kiki la petite sorcière</label><br />
+
+              <input type="checkbox" id="autre" name="movies" value="autre" />
+              <label for="autre">Autres</label>
+
+              <!-- QUESTION 3 -->
+              <p>Quel est votre film Ghibli préféré?</p>
+              <input type="text" id="filmprefere" name="filmprefere" />
+
+              <!-- QUESTION 4 -->
+              <p>Pourquoi est-ce que c'est votre film préféré?</p>
+              <textarea name="explication" rows="10" cols="40"></textarea><br />
+
+              <!-- BOUTONS -->
+              <input
+                class="bouton"
+                type="submit"
+                value="Soumettre"
+                aria-label="Soumettre"
+              />
+
+              <input
+                class="bouton"
+                type="reset"
+                value="Réinitialiser"
+                aria-label="Réinitialiser"
+              />
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </section>
+    <!-- ========================================= ARTICLES ========================================= -->
+    <section id="article">
+      <section id="soustitre">
+        <h1>
+          Studio Ghibli Inc. (株式会社スタジオジブリ, Kabushiki gaisha sutajio
+          Jiburi)
+        </h1>
+        <h2>
+          Un studio d'animation japonais fondé par Hayao Miyazaki et Isao
+          Takahata en 1985
+        </h2>
+      </section>
+
+      <h2 id="film">Quelques recommendations personnelles:</h2>
+      <section id="images">
+        <figure class="colonne" id="heart">
+          <img src="images/heart.jpg" class="poster" alt="si_tu_tends_l'oreille_poster"/>
+          <figcaption>
+            Si tu tends l'oreille <br />
+            耳をすませば (Mimi wo Sumaseba)
+          </figcaption>
+          <p>
+            Si tu tends l'oreille suit Shizuku Tsukishima, une adolescente
+            passionnée de lecture et d’écriture, qui découvre que le nom Seiji
+            Amasawa, un mystérieux garçon, est souvent inscrit sur les livres
+            qu’elle emprunte. Lorsqu’elle rencontre Seiji, elle apprend qu’il
+            rêve de devenir luthier en Italie. Inspirée par sa détermination,
+            Shizuku décide de poursuivre son propre rêve d’écrire un roman.
+            Ensemble, ils s’encouragent à suivre leurs passions tout en
+            découvrant leur relation grandissante.
+          </p>
+        </figure>
+
+        <figure class="colonne" id="mononoke">
+          <img src="images/mononoke.jpg" class="poster" alt="princesse_mononoké"/>
+          <figcaption>
+            Princesse Mononoké <br />もののけ姫 (Mononoke Hime)
+          </figcaption>
+          <p>
+            Princesse Mononoké est un film d'animation japonais réalisé par
+            Hayao Miyazaki. L’histoire se déroule à l’ère Muromachi et suit
+            Ashitaka, un prince assiégé par une malédiction après avoir été
+            attaqué par un dieu-monstre. En quête de guérison, il voyage jusqu’à
+            un territoire en conflit entre les dieux de la forêt et les humains.
+            Ashitaka rencontre San, surnommée la Princesse Mononoké, une jeune
+            femme élevée par les loups. Elle lutte pour protéger les esprits de
+            la forêt contre l’exploitation humaine menée par Lady Eboshi, qui
+            souhaite industrialiser la région. Le film explore des thèmes de
+            cohabitation entre l’homme et la nature, ainsi que la quête de paix
+            et de réconciliation.
+          </p>
+        </figure>
+
+        <figure class="colonne" id="castle">
+          <img src="images/howl.jpg" class="poster" alt="le_château_ambulant"/>
+          <figcaption>
+            Le Château ambulant <br />
+            ハウルの動く城 (Hauru no Ugoku Shiro)
+          </figcaption>
+          <p>
+            Le Château ambulant est un film d’animation japonais réalisé par
+            Hayao Miyazaki. L’histoire se déroule dans un monde où la magie est
+            omniprésente. Sophie, une jeune modiste, est transformée en vieille
+            femme par la Sorcière des Landes. En quête d’une solution, elle se
+            réfugie dans le Château ambulant, une gigantesque structure mobile
+            dirigée par le sorcier Howl. Dans ce château vivant, Sophie fait la
+            rencontre de Howl, qui se cache derrière une façade d’arrogance et
+            de froideur. Ensemble, ils découvrent la vérité derrière la
+            malédiction qui pèse sur lui. Le film explore des thèmes de
+            transformation personnelle, de guerre et de choix entre le bien et
+            le mal. Sophie et Howl apprendront à accepter leurs faiblesses et à
+            se comprendre profondément pour trouver la paix.
+          </p>
+        </figure>
+      </section>
+    </section>
+
+    <!-- ========================================= GALERIE ========================================= -->
+    <section id="galerie">
+      <!-- === TABLEAU === -->
+      <table>
+        <caption>
+          Les créateurs du Studio Ghibli et quelques contributeurs:
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Rôle</th>
+            <th>Date de Naissance</th>
+            <th>Contribution Principale</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Hayao Miyazaki</td>
+          <td>Réalisateur</td>
+          <td>5 janvier 1941</td>
+          <td>Le Voyage de Chihiro</td>
+        </tr>
+        <tr>
+          <td>Isao Takahata</td>
+          <td>Réalisateur</td>
+          <td>29 octobre 1935</td>
+          <td>Le Tombeau des lucioles</td>
+        </tr>
+        <tr>
+          <td>Toshio Suzuki</td>
+          <td>Producteur</td>
+          <td>19 août 1948</td>
+          <td>Mon Voisin Totoro</td>
+        </tr>
+        <tr>
+          <td>Yasuyoshi Tokuma</td>
+          <td>Producteur exécutif</td>
+          <td>25 août 1921</td>
+          <td>Fondateur de Tokuma Shoten, distributeur de films Ghibli</td>
+        </tr>
+        <tr>
+          <td>+ Joe Hisaishi</td>
+          <td>Compositeur</td>
+          <td>6 décembre 1950</td>
+          <td>Nausicaä de la Vallée du Vent</td>
+        </tr>
+        <tr>
+          <td>+ Goro Miyazaki</td>
+          <td>Réalisateur</td>
+          <td>21 janvier 1967</td>
+          <td>Les Contes de Terremer</td>
+        </tr>
+      </table>
+
+      <h2 id="creator">Des portraits en ordre:</h2>
+      <figure>
+        <img src="images/hayao.jpg" class="creator" alt="hayao_miyazaki"/>
+        <img src="images/isao.jpg" class="creator" alt="isao_takahata"/>
+        <img src="images/toshio.webp" class="creator" alt="toshio_suzuki"/>
+        <img src="images/yasuyoshi.png" class="creator" alt="yasuyoshi_tokuma"/>
+      </figure>
+
+      <figure>
+        <img src="images/joe.jpeg" class="contributeur" alt="joe_hisaishi"/>
+        <img src="images/goro.webp" class="contributeur" alt="goro_miyazaki"/>
+      </figure>
+    </section>
+    <!-- ========================================= VIDEO ========================================= -->
+    <section id="video">
+      <h2 id="sons">Une compilations des bandes sonores des films:</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/DlUPf-GiYGw?autoplay=1&controls=1&showinfo=0&rel=0"
+        title="Instrumentals"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+      <p id="compilation">
+        Les bandes sonores des films du studio Ghibli, composées par Joe
+        Hisaishi, jouent un rôle crucial dans l'immersion des spectateurs dans
+        l'univers des films. Ces compositions mélangent des instruments
+        traditionnels japonais avec des orchestrations modernes pour créer une
+        symbiose unique entre l’image et le son. Chaque bande sonore est
+        soigneusement conçue pour accentuer les émotions des scènes, qu'il
+        s'agisse de la tendresse de "Mon Voisin Totoro", de la mystique de "Le
+        Château dans le Ciel" ou de la puissance dramatique de "Princesse
+        Mononoke". La capacité de Hisaishi à transcender les mots par la musique
+        est l’un des éléments qui distingue les films Ghibli.
+      </p>
+    </section>
+
+    <!-- ========================================= FOOTER ========================================= -->
+    <footer>
+      <section id="liens">
+        <a href="https://www.cmaisonneuve.qc.ca/" id="web"
+          >Site web du Collège</a
+        >
+        <p class="address">
+          Address: 3800 Sherbrooke St E, Montreal, Quebec H1X 2A2
+        </p>
+
+        <section id="logos">
+          <img src="images/instagram_32.png" class="logo" alt="instagram_logo"/>
+          <img src="images/facebook_32.png" class="logo" alt="facebook_logo"/>
+          <img src="images/youtube_32.png" class="logo" alt="youtube_logo"/>
+        </section>
+
+        <p class="address">Avis de confidentialité | Privacy Notice</p>
+      </section>
+    </footer>
+  </body>
+</html>

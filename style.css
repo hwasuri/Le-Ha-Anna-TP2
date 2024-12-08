@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /*J'ai essayer d'enlever le movement horizontal de la page :(*/
+}
+
+/* ========================================= ACCUEIL ========================================= */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+  width: 50%;
+}
+
+nav {
+  font-size: 20px;
+  margin: 10px;
+  color:white;
+}
+
+a {
+  margin: 10px;
+}
+
+#titre {
+  padding: 10px;
+  font-size: 50px;
+  font-weight: normal;
+}
+/* ========================================= INSCRIPTION ========================================= */
+#debut {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(images/debut.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  margin: 15px 0px;
+  font-size: 20px;
+}
+
+#inscription {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  transform: scale(1.1);
+  color: rgb(1, 74, 1);
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  padding: 25px;
+}
+
+#filmprefere {
+  width: 70%;
+}
+
+#bouton {
+  margin: 10px 2px;
+  padding: 2.5px;
+}
+
+select {
+  font-size: 17px;
+}
+
+label {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* ========================================= ARTICLES ========================================= */
+#article {
+  width: 100%;
+  border: 10px solid rgb(102, 64, 47);
+  background-image: url(images/article.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#soustitre {
+  text-align: center;
+  transform: scale(1.15);
+  margin: 60px 0px 20px 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#film {
+  text-align: center;
+  transform: scale(1.15);
+  margin: 60px 0px 30px 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+figcaption {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  margin: 10px;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+#heart {
+  background-color: rgba(53, 109, 192, 0.5);
+  padding: 20px;
+  height: 45%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#mononoke {
+  background-color: rgba(30, 132, 57, 0.5);
+  padding: 20px;
+  height: 45%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#castle {
+  background-color: rgba(53, 109, 192, 0.5);
+  padding: 20px;
+  height: 45%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.poster {
+  width: 300px;
+  height: fit-content;
+
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.colonne {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+}
+
+.colonne:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+/* ========================================= GALERIE ========================================= */
+#galerie {
+  width: 100%;
+  border: 10px solid rgb(102, 64, 47);
+  border-top:none;
+  background-image: url(images/galerie.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#creator {
+  text-align: center;
+  margin: 50px 0px 0px 0px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  width: 50%;
+  padding: 5px;
+}
+
+.creator{
+  height: 250px;
+  width: fit-content;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+  margin: 10px 50px 0px 50px;
+}
+
+.creator:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+figure {
+  margin: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contributeur {
+  height: 250px;
+  width: fit-content;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+  margin: 0px 50px 50px 50px;
+  
+}
+
+.contributeur:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+/* === TABLEAU === */
+caption {
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  font-size: 25px;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s;
+  
+}
+
+th {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+th,
+td {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+th {
+  background-color: rgb(117, 69, 40, 0.5);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(181, 252, 228, 0.75);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(210, 245, 230, 0.75);
+}
+
+/* ========================================= VIDEO ========================================= */
+#sons {
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px;
+  color: rgba(246, 113, 113);
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#video {
+  background-image: url(images/video\ .jpg);
+  background-size: cover;
+  background-position: center;
+  border: 10px solid rgb(102, 64, 47);
+  border-top:none;
+  border-bottom: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+iframe {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: 50px;
+}
+
+#compilation {
+  background-color: rgba(1, 70, 74, 0.5);
+  padding: 30px;
+  text-align: center;
+  width: 70%;
+  line-height: 1.5;
+  font-size: 20px;
+  transition: transform 0.5s;
+  margin: 20px 0px 50px 0px;
+  color: rgba(246, 113, 113);
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#compilation:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+/* ========================================= FOOTER ========================================= */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color:rgb(102, 64, 47);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.address, #web {
+  font-size: 21.5px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logos {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 5px;
+}
